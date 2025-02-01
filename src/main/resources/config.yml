@@ -1,0 +1,54 @@
+# Инструкция настройки (RUS)
+
+# 1. Поставьте "enable: true", чтобы включить нужные вам события.
+# 2. Выберите тип команды "type: console" или "type: player"
+# 3. Введите команды в "command: ...", которые будут выполняться.
+
+# Чтобы добавить ник игрока, скачайте PlaceHolderAPI, и установите расширение "Player", через команду "/papi ecloud download Player". После этого используйте %player_name%, для отображение ника игрока.
+# ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+# Setup instructions (ENG)
+
+# 1. Set "enable: true" to enable the events you want.
+# 2. Choose command type "type: console" or "type: player"
+# 3. Enter the commands in the "command: ..." that will be executed.
+
+# To add a player nickname, download the PlaceHolderAPI, and install the "Player" extension, via the command "/papi ecloud download Player". After that, use %player_name%, to display the player's nickname.
+
+settings:
+  cmd-join:
+    enable: true
+    type: console
+    commands:
+      - 'say Welcome to the exciting server! The server has the Commands at Join plugin by megamaster684.'
+      - 'say Please go to config.yml and configure the plugin.'
+  cmd-quit:
+    enable: false
+    type: console
+    commands:
+      - ''
+  cmd-change-world:
+    enable: false
+    type: console
+    commands:
+      - ''
+  cmd-death:
+    enable: false
+    type: console
+    commands:
+      - ''
+  cmd-break-block:
+    enable: false
+    type: console
+    commands:
+      - ''
+  cmd-place-block:
+    enable: false
+    type: console
+    commands:
+      - ''
+
+messages:
+  noPermission: "&7[&e&lCommands at Join&7] &c&lУ вас нет прав!"
+  Usage: "&7[&e&lCommands at Join&7] &fДоступные команды: &b/cj reload &fи &b/cj setup"
+  pluginReload: "&7[&e&lCommands at Join&7] &6&lПерезапуск плагина..."
+  pluginCompleteReload: "&7[&e&lCommands at Join&7] &a&lПлагин успешно перезагружен!"
