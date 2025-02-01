@@ -6,7 +6,7 @@
 
     <groupId>megamaster684</groupId>
     <artifactId>CommandsJoin</artifactId>
-    <version>0.1</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>Commands at Join</name>
