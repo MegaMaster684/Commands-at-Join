@@ -1,9 +1,9 @@
-name: Commands_at_Join
-version: 1.0
+name: Commands-at-Join
+version: ${project.version}
 main: megamaster684.commandsjoin.CommandsJoin
 api-version: 1.13
 softdepend: [PlaceholderAPI]
-authors: [Mega_Master]
+authors: [MegaMaster684]
 description: When entering, exiting, switching between worlds and after death, in console will send a command, specified in Config.yml.
 commands:
   cj: {}

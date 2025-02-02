@@ -6,10 +6,10 @@
 
     <groupId>megamaster684</groupId>
     <artifactId>CommandsJoin</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
-    <name>Commands at Join</name>
+    <name>Commands-at-Join</name>
 
     <description>When entering, exiting, switching between worlds and after death, in console will send a command,
         specified in Config.yml.
@@ -26,8 +26,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>9</source>
-                    <target>9</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>

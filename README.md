@@ -19,3 +19,6 @@ Commands at Join is a plugin that executes a command at a certain action from a 
 * `/cj` → List of commands
 * `/cj reload` → Reload plugin
 * `/cj setup` → Instructions on how to set up the plugin
+
+## Permissions
+* `cj.admin` → Gives access to the `/cj reload` and `/cj setup` commands

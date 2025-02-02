@@ -8,21 +8,22 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class CmdJoinCommand implements CommandExecutor {
 
-    List<String> ListSetupText = List.of(
+    List<String> ListSetupText = Arrays.asList(
             "&7[&e&lCommands at Join&7] Инструкция по настройке плагина:",
             "",
             "&a&lИнструкция настройки &f&l(RUS)",
-            "&e&oС начало перейдите по пути 'plugins/Commands_at_Join/config.yml' и откройте конфиг.",
+            "&e&oС начало перейдите по пути 'plugins/Commands-at-Join/config.yml' и откройте конфиг.",
             " &8| &71. Поставьте 'enable: true', чтобы включить нужные вам события.",
             " &8| &72. Выберите тип команды 'type: console' или 'type: player'",
             " &8| &73. Введите команды в 'command: ...', которые будут выполняться.",
             "&7----- &e----- &7----- &e----- &7----- &e----- &7----- &e----- &7-----",
             "&a&lSetup instructions &f&l(ENG)",
-            "&e&oFirst go to 'plugins/Commands_at_Join/config.yml' and open the config.",
+            "&e&oFirst go to 'plugins/Commands-at-Join/config.yml' and open the config.",
             " &8| &71. Set 'enable: true' to enable the events you want.",
             " &8| &72. Choose command type 'type: console' or 'type: player'",
             " &8| &73. Enter the commands in the 'command: ...' that will be executed."
