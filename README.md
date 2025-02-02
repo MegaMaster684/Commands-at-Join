@@ -1,3 +1,5 @@
+**This plugin was created in 2021.**
+
 # Commands at Join
 
 Commands at Join is a plugin that executes a command at a certain action from a player, specified in `config.yml`.
