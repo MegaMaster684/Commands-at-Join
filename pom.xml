@@ -4,15 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>megamaster684</groupId>
+    <groupId>me.megamaster684</groupId>
     <artifactId>CommandsJoin</artifactId>
-    <version>1.0.1</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>Commands-at-Join</name>
 
-    <description>When entering, exiting, switching between worlds and after death, in console will send a command,
-        specified in Config.yml.
+    <description>Executes commands when joining the server, leaving the server, and other events.
     </description>
     <properties>
         <java.version>1.8</java.version>
@@ -57,7 +56,7 @@
 
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
+            <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
@@ -80,7 +79,7 @@
         <dependency>
             <groupId>me.clip</groupId>
             <artifactId>placeholderapi</artifactId>
-            <version>2.10.10</version>
+            <version>2.11.6</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

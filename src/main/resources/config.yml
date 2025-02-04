@@ -2,53 +2,59 @@
 
 # 1. Поставьте "enable: true", чтобы включить нужные вам события.
 # 2. Выберите тип команды "type: console" или "type: player"
-# 3. Введите команды в "command: ...", которые будут выполняться.
+# 3. Введите команды в "commands: ...", которые будут выполняться
 
-# Чтобы добавить ник игрока, скачайте PlaceHolderAPI, и установите расширение "Player", через команду "/papi ecloud download Player". После этого используйте %player_name%, для отображение ника игрока.
+# Чтобы добавить ник игрока, скачайте PlaceHolderAPI, и установите расширение "Player", через команду "/papi ecloud download Player".
+# После этого используйте %player_name%, для отображение ника игрока.
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 # Setup instructions (ENG)
 
 # 1. Set "enable: true" to enable the events you want.
 # 2. Choose command type "type: console" or "type: player"
-# 3. Enter the commands in the "command: ..." that will be executed.
+# 3. Enter the commands in the "commands: ..." that will be executed
 
-# To add a player nickname, download the PlaceHolderAPI, and install the "Player" extension, via the command "/papi ecloud download Player". After that, use %player_name%, to display the player's nickname.
+# To add a player nickname, download the PlaceHolderAPI, and install the "Player" extension, via the command "/papi ecloud download Player".
+# After that, use %player_name%, to display the player's nickname.
 
-settings:
-  cmd-join:
+events:
+  join:
     enable: true
     type: console
     commands:
-      - 'say Welcome to the exciting server! The server has the Commands at Join plugin by megamaster684.'
-      - 'say Please go to config.yml and configure the plugin.'
-  cmd-quit:
+      - 'say Добро пожаловать на увлекательный сервер! На сервере установлен плагин Commands at Join от MegaMaster684.'
+      - 'say Пожалуйста, перейдите в "plugins/Commands-at-Join/config.yml" и настройте плагин.'
+  quit:
     enable: false
     type: console
     commands:
       - ''
-  cmd-change-world:
+  change-world:
     enable: false
     type: console
     commands:
       - ''
-  cmd-death:
+  death:
     enable: false
     type: console
     commands:
       - ''
-  cmd-break-block:
+  break-block:
     enable: false
     type: console
     commands:
       - ''
-  cmd-place-block:
+  place-block:
+    enable: false
+    type: console
+    commands:
+      - ''
+  player-click:
     enable: false
     type: console
     commands:
       - ''
 
 messages:
-  noPermission: "&7[&e&lCommands at Join&7] &c&lУ вас нет прав!"
-  Usage: "&7[&e&lCommands at Join&7] &fДоступные команды: &b/cj reload &fи &b/cj setup"
-  pluginReload: "&7[&e&lCommands at Join&7] &6&lПерезапуск плагина..."
-  pluginCompleteReload: "&7[&e&lCommands at Join&7] &a&lПлагин успешно перезагружен!"
+  commandsList: "&7[&eCommands at Join&7] &fДоступные команды: &b/cj setup &fи &b/cj reload"
+  reloadPlugin: "&7[&eCommands at Join&7] &aПлагин успешно перезагружен."
+  noPermission: "&7[&eCommands at Join&7] &cУ вас нет прав на использование этой команды."

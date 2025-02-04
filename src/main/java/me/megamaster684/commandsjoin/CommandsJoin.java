@@ -1,9 +1,7 @@
-package megamaster684.commandsjoin;
+package me.megamaster684.commandsjoin;
 
-// Импорт классов
-
-import megamaster684.commandsjoin.command.CmdJoinCommand;
-import megamaster684.commandsjoin.command.TabComplete;
+import me.megamaster684.commandsjoin.command.CmdJoinCommand;
+import me.megamaster684.commandsjoin.command.TabComplete;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -12,18 +10,21 @@ public final class CommandsJoin extends JavaPlugin implements Listener {
 
     private static CommandsJoin instance;
 
+    // Включение сервера
     @Override
-    public void onEnable() /* Включение сервера */ {
+    public void onEnable()  {
         instance = this;
 
         saveDefaultConfig(); // При включении сервера, будет создаваться файл config.yml
+
         Bukkit.getPluginManager().registerEvents(new EventListener(), this);
         getCommand("cj").setExecutor(new CmdJoinCommand());
         getCommand("cj").setTabCompleter(new TabComplete());
     }
 
+    // Выключение сервера
     @Override
-    public void onDisable() /* Выключение сервера */{
+    public void onDisable() {
         // Тут ничего нет
     }
 

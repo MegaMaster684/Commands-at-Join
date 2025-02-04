@@ -2,19 +2,19 @@
 
 # Commands at Join
 
-Commands at Join is a plugin that executes a command at a certain action from a player, specified in `config.yml`.
+Commands at Join is a plugin that executes commands when joining the server, leaving the server, and other events.
 
 ## Features
 
 * Executing a command when logging into the server
 * Executing a command when leaving the server
 * Executing a command when moving between worlds on the server
-* Executing a command after death
-* Executing a command when breaking and setting a block
+* Executing a command when a player dies
+* Executing a command when breaking and placing a block
+* Executing a command when pressing the Right-click on another player
 * Executing a command in the console or from a player
 * Full customization of all messages and commands in the config
 * PlaceHolderAPI support
-* Support for Colors in messages
 
 ## Commands
 

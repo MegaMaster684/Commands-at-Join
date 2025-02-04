@@ -1,9 +1,9 @@
 name: Commands-at-Join
+main: me.megamaster684.commandsjoin.CommandsJoin
 version: ${project.version}
-main: megamaster684.commandsjoin.CommandsJoin
+description: Executes commands when joining the server, leaving the server, and other events.
 api-version: 1.13
+author: MegaMaster684
 softdepend: [PlaceholderAPI]
-authors: [MegaMaster684]
-description: When entering, exiting, switching between worlds and after death, in console will send a command, specified in Config.yml.
 commands:
   cj: {}

@@ -1,9 +1,8 @@
-package megamaster684.commandsjoin.command;
+package me.megamaster684.commandsjoin.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
-
 import java.util.Arrays;
 import java.util.List;
 
